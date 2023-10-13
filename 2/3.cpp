@@ -74,7 +74,7 @@ int main()
   std::cout << "back: " << v.vector_back() << std::endl;
   std::cout << "size: " << v.vector_size() << std::endl;
   std::cout << v.phys << std::endl;
-  for (int i = 0; i < v.size; i++) {
+  for (int i = 0; i < v.vector_size(); i++) {
     std::cout << v.n[i] << std::endl;
   }
 
