@@ -8,7 +8,8 @@ void vec_remove(std::vector<int>& v, int n)
   v.erase(v.begin() + n);
 }
 
-int main(){
+int main()
+{
   std::vector<int> v;
 
   vec_read(v, 4);
