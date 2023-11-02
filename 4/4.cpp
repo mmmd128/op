@@ -33,6 +33,7 @@ std::string translate(std::string& s)
     t += ' ';
   }
 
+  t.pop_back();
   return t;
 }
 
