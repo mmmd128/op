@@ -46,7 +46,9 @@ int main()
 
   while (std::getline(std::cin, s))
     v.push_back(s);
-  std::uniform_int_distribution<int> dist(0, v.size() - 1);
-  std::cout << translate(v[dist(mt)]) << std::endl;
+  if (v.size() > 0) {
+    std::uniform_int_distribution<int> dist(0, v.size() - 1);
+    std::cout << translate(v[dist(mt)]) << std::endl;
+  }
   return 0;
 }
